@@ -123,7 +123,7 @@ const app = express();
 app.use(express.json())//parse j
 const { v4: uuidv4 } = require('uuid');
 const mongoose=require('mongoose')
-const mongourl="mongodb://localhost:27017/practice123";
+const mongourl="mongodb+srv://puviyarasu787:7HE4PIGue2c5cxRI@cluster0.k2olv.mongodb.net/practice123";
 mongoose
 .connect(mongourl)
 .then(()=>{
