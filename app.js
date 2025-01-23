@@ -125,7 +125,7 @@ const mongoose = require('mongoose');
 
 app.use(express.json()); // Parse JSON
 
-const mongoURL ="mongodb+srv://puviyarasu787:7HE4PIGue2c5cxRI@cluster0.k2olv.mongodb.net/";
+const mongoURL ="mongodb+srv://puviyarasu787:7HE4PIGue2c5cxRI@cluster0.k2olv.mongodb.net/test";
 
 mongoose
   .connect(mongoURL)
