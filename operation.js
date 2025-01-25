@@ -13,5 +13,13 @@
 // function arr(array) {
 //     return array.map((elem)=>elem);
 // }
+import mongoose from 'mongoose';
 
-// module.exports = {arr};
+const userSchema = new mongoose.Schema({
+  username: { type: String, required: true, unique: true },
+  password: { type: String, required: true }
+});
+
+const User = mongoose.model('User', userSchema);
+
+export default User;
